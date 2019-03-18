@@ -2,7 +2,7 @@
   "name": "vue2-multiple-entry",
   "version": "2.0.0",
   "description": "vue2-multiple-entry",
-  "author": "lincenying <lincenying@qq.com>",
+  "author": "Silence <13145211216@163.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server.js",

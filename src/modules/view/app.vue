@@ -1,5 +1,5 @@
 <template>
-    <div class="g-doc">
+    <div id="app">
         <nav-component />
         <views :data="data" />
     </div>

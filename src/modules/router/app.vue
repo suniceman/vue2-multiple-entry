@@ -1,5 +1,5 @@
 <template>
-    <div class="g-doc">
+    <div id="app">
         <nav-component :current="4" />
         <router-view :key="key" class="body" v-transition></router-view>
     </div>

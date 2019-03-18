@@ -1,9 +1,3 @@
-/* global navigator */
-/**
- * @file serviceworker register
- * @author lincenying(lincenying@qq.com)
- */
-
 // 注册的地址为 sw-precache-webpack-pulgin 生成的 service-worker.js 或者自己手动维护的 service worker 文件
 if (window.location.protocol === 'https:' && navigator.serviceWorker) {
     navigator.serviceWorker.register('/service-worker.js').then(function() {

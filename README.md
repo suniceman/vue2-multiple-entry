@@ -10,7 +10,7 @@
 
 vuex模块带有懒加载
 
-DEMO: http://old.mmxiaowu.com/vue2-multiple-entry/index
+DEMO: http://suniceman.com/vue2-multiple-entry/index
 
 fork demo
 
@@ -32,18 +32,18 @@ $ npm run dev
 $ npm run lint
 ```
 
-访问: http://localhost:8080/index
+访问: http://localhost:9999/index
 
 
 # 目录结构
-- /build/          = webpack配置文件目录
-- /dist/           = webpack编译后生成文件目录
-- /src/api/        = axios配置目录
-- /src/assets/     = 静态文件目录
-- /src/components/ = 组件目录
-- /src/modules/    = 多页面模块, 每个模块一个文件夹
-- /src/modules/router    = 多页面模块之带路由模块的例子
-- /src/modules/vuex    = 多页面模块之带路由和vuex的模块的例子
-- /static/         = 静态文件目录
-- /template/       = html文件模版
-- /utils/          = 一些有用的插件
+- /build/            = webpack配置文件目录
+- /dist/             = webpack编译后生成文件目录
+- /src/api/          = axios配置目录
+- /src/assets/       = 静态文件目录
+- /src/components/   = 组件目录
+- /src/modules/      = 多页面模块, 每个模块一个文件夹
+- /src/modules/router= 多页面模块之带路由模块的例子
+- /src/modules/vuex  = 多页面模块之带路由和vuex的模块的例子
+- /static/           = 静态文件目录
+- /template/         = html文件模版
+- /utils/            = 插件

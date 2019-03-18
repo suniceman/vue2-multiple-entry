@@ -1,14 +1,3 @@
-/**
- * @file sw-precache一些设置项，staticFileGlobs主要是设置具体需要缓存的文件
- * 在webpack.prod.conf.js 中被使用
- * 可使用参考链接
- * https://www.npmjs.com/package/sw-precache-webpack-plugin 具体的配置参数选择
- * https://github.com/GoogleChrome/sw-precache#handlefetch-boolean
- * https://metaquant.org/programing/sw-precache-guide.html
- *
- * @author lincenying(lincenying@qq.com)
- */
-
 module.exports = {
 
     /**

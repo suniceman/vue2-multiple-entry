@@ -58,7 +58,7 @@ app.use(
         rewrites: [
             { from: /\/$/, to: '/index/index.html' },
             { from: /^\/index/, to: '/index/index.html' },
-            { from: /^\/module2/, to: '/module2/index.html' },
+            { from: /^\/login/, to: '/login/index.html' },
             { from: /^\/module3/, to: '/module3/index.html' },
             { from: /^\/router/, to: '/router/index.html' },
             { from: /^\/vuex/, to: '/vuex/index.html' },

@@ -1,13 +1,14 @@
 <template>
-    <div class="g-doc">
+    <div id="app">
         <nav-component :current="1" />
-        <modules :topics="topics" :page="page" />
+        <modules :topics="topics" :page="page" :title="title" :loading="loading" />
     </div>
 </template>
 <script>
 import navComponent from '~components/nav-component.vue'
-import modules from '~components/module-1.vue'
+import modules from '~components/modules'
 import api from '~api'
+
 export default {
     name: 'index-app',
     components: {
@@ -17,12 +18,17 @@ export default {
     data() {
         return {
             page: Number(new URLSearchParams(window.location.search).get('page')) || 1,
-            topics: []
+            topics: [],
+            title: '这是模块 - 1',
+            loading: true
         }
     },
     async mounted() {
         const { success, data } = await api.get('topics', { page: this.page })
-        if (success) this.topics = data
+        if (success) {
+            this.topics = data
+            this.loading = false
+        }
     },
     metaInfo: {
         title: '首页'

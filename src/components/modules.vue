@@ -1,6 +1,9 @@
 <template>
     <div class="body">
-        <div class="header">这是模块 - 2</div>
+        <div class="loading-layer" v-if="loading">
+            <div class="loading"></div>
+        </div>
+        <div class="header">{{ title }}</div>
         <ul class="topics">
             <li v-for="item in topics" :key="item.id"><a :href="`../view?id=${item.id}`" v-text="item.title" target="_blank"></a></li>
         </ul>
@@ -19,6 +22,14 @@ export default {
         },
         page: {
             default: 1
+        },
+        title: {
+            type: String,
+            default: () => '神秘的外星模块'
+        },
+        loading: {
+            type: Boolean,
+            default: () => true
         }
     }
 }
